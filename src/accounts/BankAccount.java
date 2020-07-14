@@ -57,13 +57,14 @@ public class BankAccount { // Object
     // } DANGEROUS - DO NOT TRY THIS AT HOME
     public void deposit(double amount) {
         this.amount += amount;
+        setTransaction(amount, 'D');
     }
 
     public double getAmount() {
         return (this.amount);
     }
 
-    public double witdraw(double amount) {
+    public double withdraw(double amount) {
         if (amount <= this.amount) {
             this.amount -= amount; // this.amount -> 1000, double amount = 1200	
             // transactions.add("withdrawal amount: " + amount);

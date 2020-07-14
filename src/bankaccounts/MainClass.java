@@ -30,6 +30,10 @@ public class MainClass {
         System.out.println(ba2);
         System.out.println(ba2.getTransactions());
         
+        ba2.deposit(1800);
+        ba2.withdraw(100);
+        System.out.println(ba2.getTransactions());
+        
 //        Person bary;
 //        Person mary;
 //        
